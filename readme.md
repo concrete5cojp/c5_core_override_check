@@ -39,8 +39,8 @@ Therefore, I made this shell script to check to make sure if anybody else (inclu
 
 ## How to run
 
-- Get the working directory URL. I recommend to use under home directory. Make some empty directory, then use `pwd` command to get the path.
-- Get the concrete5 directory. Go to the concrete5 root directory and run `pwd` command.
+- Get the working directory full path. (I recommend to use under home directory.) Make some empty directory, then use `pwd` command to get the path.
+- Get the concrete5 directory full path. Go to the concrete5 root directory and run `pwd` command.
 - No slash at the end
 
 ```
