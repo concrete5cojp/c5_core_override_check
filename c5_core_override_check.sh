@@ -25,7 +25,7 @@ URL_CONCRETE5="https://www.concrete5.org/download_file/-/view/111592/8497/"
 # ==============================
 
 echo " -- -- -- -- -- -- -- -- -- -- --"
-echo "  concrete5 core file checker v 0.1.0"
+echo "  concrete5 core file checker v 0.9.0"
 echo " -- -- -- -- -- -- -- -- -- -- --"
 echo "Please check the following parameters:"
 echo ""
