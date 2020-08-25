@@ -10,7 +10,7 @@ Usually, you are NOT supposed to modify anything underneath of `/concrete` direc
 
 However, sometime you had to, or somebody else did.
 
-This becomes critical at the time of the upgrade, especially for the project that you took over from some someone else.
+This becomes critical at the time of the upgrade, especially for the project that you took over from someone else.
 
 People forget things.
 
