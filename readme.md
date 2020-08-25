@@ -4,6 +4,16 @@ concrete5 Core override checker is the very simple interactive tool to check if 
 
 You need to upload this shell script to the server and run it directory from server (Or download the file to run locally)
 
+## Concept and Purpose.
+
+Usually, you are NOT supposed to modify anything underneath of `/concrete` directory by design.
+
+However, sometime you have to, or somebody else did.
+
+This becomes critical at the time of upgrade and when you take over the project some someone else.
+
+I made this shell script to check to make sure if anybody else didn't override the core.
+
 ## How it works
 
 - It copies the concrete directory from web server to working directory
