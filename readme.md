@@ -32,7 +32,7 @@ I made this shell script to check to make sure if anybody else didn't override t
 
 - Open `c5_core_override.chech.sh` file. Make sure you have execution rights.
 - Check the file permission of concrete5 folder.
-- Change the CONCRETE5_VERSION & URL_CONCRETE5 to your preferred version and download link. You can get the download URL from [concrete5.org Download page](https://www.concrete5.org/developers/developer-downloads/]
+- Change the CONCRETE5_VERSION & URL_CONCRETE5 to your preferred version and download link. You can get the download URL from [concrete5.org Download page](https://www.concrete5.org/developers/developer-downloads/)
 - Upload the shell script to the server
 
 ## How to run
@@ -65,6 +65,10 @@ Download & open the diff file and check the diff file.
 Date | Version | Comment
 ----|-----|------
 2020/8/25 | 0.9.0 | Initial Version
+
+# License
+
+The MIT License (MIT)
 
 # Credit
 
