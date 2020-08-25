@@ -8,11 +8,13 @@ You need to upload this shell script to the server and run it directory from ser
 
 Usually, you are NOT supposed to modify anything underneath of `/concrete` directory by design.
 
-However, sometime you have to, or somebody else did.
+However, sometime you had to, or somebody else did.
 
-This becomes critical at the time of upgrade and when you take over the project some someone else.
+This becomes critical at the time of the upgrade, especially for the porject that you took over from some someone else.
 
-I made this shell script to check to make sure if anybody else didn't override the core.
+People forget things.
+
+Therefore, I made this shell script to check to make sure if anybody else (including you) didn't override the concrete5 core, so that you can proceed the upgrade.
 
 ## How it works
 
