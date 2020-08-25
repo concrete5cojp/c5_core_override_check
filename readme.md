@@ -52,6 +52,7 @@ Download & open the diff file and check the diff file.
 
 # Version History
 
+Date | Version | Comment
 ----|-----|------
 2020/8/25 | 0.9.0 | Initial Version
 
