@@ -60,7 +60,7 @@ $ sh c5_core_override_check.sh "/home/ec2-user/c5_check" "/var/www/vhosts/concre
 
 If there is core override, it will generate concrete5_YYYYMMDDHHMMSS.diff file under working directory.
 
-Download & open the diff file and check the diff file.
+Download & open the diff file, and check the modifications.
 
 # Version History
 
