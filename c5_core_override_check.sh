@@ -15,8 +15,8 @@
 DIR_WORKING=$1
 DIR_CONCRETE5=$2
 ## Get Download URL and version from https://www.concrete5.org/developers/developer-downloads/
-CONCRETE5_VERSION="8.5.2"
-URL_CONCRETE5="https://www.concrete5.org/download_file/-/view/111592/8497/"
+CONCRETE5_VERSION="8.5.6"
+URL_CONCRETE5="https://www.concretecms.com/download_file/61dab82f-fb01-47bc-8cf1-deffff890224/9"
 
 # ==============================
 #
