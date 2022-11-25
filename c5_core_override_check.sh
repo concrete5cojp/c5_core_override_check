@@ -15,8 +15,8 @@
 DIR_WORKING=$1
 DIR_CONCRETE5=$2
 ## Get Download URL and version from https://www.concrete5.org/developers/developer-downloads/
-CONCRETE5_VERSION="8.5.12"
-URL_CONCRETE5="https://www.concretecms.org/download_file/2bba0898-1539-48ff-b273-0cbddc7588da"
+CONCRETE5_VERSION="8.5.9"
+URL_CONCRETE5="https://www.concretecms.org/download_file/7730d563-57d5-4433-b0ae-147db99fbf0d"
 
 # ==============================
 #
@@ -64,7 +64,7 @@ echo "cd to working directory (doesn't do much)"
 echo "${DIR_WORKING}"
 cd ${DIR_WORKING}
 echo "Copying concrete directory of web to working directory"
-cp -r ${DIR_CONCRETE5}/concrete concrete5_web
+cp -r ${DIR_CONCRETE5}/concrete ${DIR_WORKING}/concrete5_web
 echo "Fetching original concrete5 core file"
 ## wget concrete5-8.5.2-original.zip https://www.concrete5.org/download_file/-/view/111592/8497/
 wget -O ${CONCRETE5_PACKAGE_DIRECTORY_NAME}-original.zip ${URL_CONCRETE5}
