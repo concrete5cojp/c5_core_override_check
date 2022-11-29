@@ -14,9 +14,18 @@
 # Parameters
 DIR_WORKING=$1
 DIR_CONCRETE5=$2
-## Get Download URL and version from https://www.concrete5.org/developers/developer-downloads/
-CONCRETE5_VERSION="8.5.9"
+## Get Download URL and version from https://marketplace.concretecms.com/developers/developer-downloads
 URL_CONCRETE5="https://www.concretecms.org/download_file/7730d563-57d5-4433-b0ae-147db99fbf0d"
+
+CONCRETE5_VERSION=$3
+URL_CONCRETE5=$4
+if [ ! "$CONCRETE5_VERSION" ]; then
+    CONCRETE5_VERSION="8.5.9"
+fi
+if [ ! "$URL_CONCRETE5" ]; then
+    URL_CONCRETE5="https://www.concretecms.org/download_file/7730d563-57d5-4433-b0ae-147db99fbf0d"
+fi
+
 
 # ==============================
 #

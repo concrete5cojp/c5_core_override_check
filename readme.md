@@ -1,6 +1,6 @@
-# concrete5 Core Override Checker
+# Concrete CMS Core Override Checker
 
-concrete5 Core override checker is the very simple interactive tool to check if your concrete5 core directory has some overrides from concrete5 original package.
+Concrete CMS Core override checker is the very simple interactive tool to check if your Concrete CMS core directory has some overrides from concrete5 original package.
 
 You need to upload this shell script to the server and run it directory from server (Or download the file to run locally)
 
@@ -8,7 +8,7 @@ You need to upload this shell script to the server and run it directory from ser
 
 Usually, you are NOT supposed to modify anything underneath of `/concrete` directory by design.
 
-However, sometime you had to, or somebody else did.
+However, sometime you had to do it, or somebody else did.
 
 This becomes critical at the time of the upgrade, especially for the project that you took over from someone else.
 
@@ -19,7 +19,7 @@ Therefore, I made this shell script to check to make sure if anybody else (inclu
 ## How it works
 
 - It copies the concrete directory from web server to working directory
-- It downloads the concrete5 original package from concrete5.org server & extract the zip file.
+- It downloads the concrete5 original package from concretecms.org server & extract the zip file.
 - Run a DIFF command.
 - Check if the diff file size is zero or not.
 - If it's not zero, it gives you warning and save the diff file
@@ -28,7 +28,7 @@ Therefore, I made this shell script to check to make sure if anybody else (inclu
 ## Requirement
 
 - You need to have the basic understanding of the server.
-- The server needs to be able to run shell scrpt, and have necessary tools (this shell script uses very basic tools)
+- The server needs to be able to run shell script, and have necessary tools (this shell script uses very basic tools)
 
 ## How to set it up
 
@@ -45,7 +45,7 @@ Therefore, I made this shell script to check to make sure if anybody else (inclu
 
 ```
 $ cd [shell script location]
-$ sh c5_core_override_check.sh [path to working directory] [path to concrete5 directory]
+$ sh c5_core_override_check.sh [path to working directory] [path to concrete5 directory] [Concrete CMS version] [Concrete CMS download URL]
 ```
 
 ### Example command
@@ -53,7 +53,10 @@ $ sh c5_core_override_check.sh [path to working directory] [path to concrete5 di
 ```
 $ cd
 $ mkdir c5_check
+$ # Check using default Concrete CMS version
 $ sh c5_core_override_check.sh "/home/ec2-user/c5_check" "/var/www/vhosts/concrete5.co.jp/"
+$ # Indicate Concrete CMS versiona and download URL
+$ sh c5_core_override_check.sh "/home/ec2-user/c5_check" "/var/www/vhosts/concrete5.co.jp/ 9.1.3 https://www.concretecms.com/download_file/f7867cc1-3cbd-45b6-8df7-66ea2151eda0"
 ```
 
 ## What to check the result
@@ -66,6 +69,7 @@ Download & open the diff file, and check the modifications.
 
 Date | Version | Comment
 ----|-----|------
+2022/11/29 | 1.0.0 | - Added version and download URL option<br>Added support for 8.5.9 and later
 2020/8/25 | 0.9.0 | Initial Version
 
 # License
@@ -74,7 +78,7 @@ The MIT License (MIT)
 
 # Credit
 
-- Katz (concrete5 Japan, Inc.)
+- Katz (Macareux Digital, Inc.)
     - [GitHub @katzueno](https://github.com/katzueno)
     - [Twitter in English @katz515](https://twitter.com/katz515)
     - [Twitter in Japanese @katzueno](https://twitter.com/katzueno)
